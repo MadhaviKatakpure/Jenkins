@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Suite]" parallel="tests">
+  <test thread-count="5" verbose="0" name="Firefox Test(failed)" parallel="tests">
+    <parameter name="Port" value="6666"/>
+    <classes>
+      <class name="org.Testcase.FlipkartTestcase">
+        <methods>
+          <include name="setup1"/>
+          <include name="scenarioDemo"/>
+        </methods>
+      </class> <!-- org.Testcase.FlipkartTestcase -->
+    </classes>
+  </test> <!-- Firefox Test(failed) -->
+  <test thread-count="5" verbose="0" name="Chrome Test(failed)" parallel="tests">
+    <parameter name="Port" value="5555"/>
+    <classes>
+      <class name="org.Testcase.FlipkartTestcase">
+        <methods>
+          <include name="setup1"/>
+          <include name="scenarioDemo"/>
+        </methods>
+      </class> <!-- org.Testcase.FlipkartTestcase -->
+    </classes>
+  </test> <!-- Chrome Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
